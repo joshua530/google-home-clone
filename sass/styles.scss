@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Manjari;
+  font-size: 0.8rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+}
+
+header {
+  margin-bottom: 3em;
+}
+
+img {
+  display: block;
+}
+
+input[type='text'] {
+  outline: none;
+}
+
+.search-form-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form-input svg {
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+}
+
+.search-form-input input {
+  width: 90%;
+  margin-left: 0.2em;
+  height: 2.5em;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 20px;
+  padding-left: 1em;
+}
+
+@import 'config';
+@import 'utilities';
+@import 'fonts';
+@import 'icons';
+@import 'nav';
+@import 'buttons';
+@import 'footer';
+
+@media screen and (min-width: 360px) {
+  .search-form-input input {
+    width: 90%;
+  }
+
+  .search-form-input svg {
+    top: 0.5em;
+    left: 2.5em;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .search-form-input input {
+    width: 80%;
+  }
+
+  .search-form-input svg {
+    left: 5em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .search-form-input input {
+    width: 75%;
+  }
+
+  .search-form-input svg {
+    left: 7em;
+  }
+}
+
+@media screen and (min-width: 670px) {
+  .search-form-input svg {
+    left: 7.5em;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .search-form-input input {
+    width: 60%;
+  }
+
+  .search-form-input svg {
+    left: 12em;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .search-form-input svg {
+    left: 13em;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .search-form-input svg {
+    left: 14em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .search-form-input svg {
+    left: 15em;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .search-form-input svg {
+    left: 16em;
+  }
+}
+
+@media screen and (min-width: 1010px) {
+  .search-form-input svg {
+    left: 17em;
+  }
+}
+
+@media screen and (min-width: 1085px) {
+  .search-form-input svg {
+    left: 18em;
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  .search-form-input svg {
+    left: 19em;
+  }
+}
+
+@media screen and (min-width: 1210px) {
+  .search-form-input svg {
+    left: 20em;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .search-form-input svg {
+    left: 21em;
+  }
+}

@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.2em 1em;
+  margin-top: 0.5em;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav li {
+  padding: 0 0.4em;
+}

@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 6px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-blue {
+  background: #1a73e8;
+}
+
+.btn-light {
+  background: #e2e3e5;
+  color: #636464;
+}

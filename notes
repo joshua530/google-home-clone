@@ -1,0 +1,8 @@
+had problem centering the search input
+items in home page move up and down when input is focused and out of focus
+
+-> solved by setting input and svg's parent's
+properties as:
+    position: relative
+    display: flex
+    justify-content: center

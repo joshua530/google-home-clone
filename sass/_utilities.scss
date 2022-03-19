@@ -1,0 +1,18 @@
+.container,
+.container-flex {
+  margin: 1em 0;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-blue {
+  color: #0808ee;
+}
+
+.display-inline {
+  display: inline;
+}

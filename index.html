@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <title>Google</title>
+</head>
+<body>
+    <header>
+        <ul class="nav">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">
+                    <svg class="flexible-icon" focusable="false" viewBox="0 0 24 24">
+                        <path
+                            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                        </path>
+                    </svg>
+                </a></li>
+            <li><a href="#" class="btn btn-blue">Sign In</a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <div class="container container-flex">
+            <img class="icon-branding" src="../images/home-page.png" alt="home icon">
+        </div>
+        <div class="container">
+            <form id="search-form">
+                <div class="search-form-input">
+                    <svg class="search-input-svg svg-grey flexible-icon" focusable="false"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                    <input class="search-input" type="text">
+                </div>
+            </form>
+        </div>
+        <div class="container container-flex">
+            <ul class="nav">
+                <li><a href="#" class="btn btn-light">Google Search</a></li>
+                <li><a href="#" class="btn btn-light">I'm Feeling Lucky</a></li>
+            </ul>
+        </div>
+        <div class="container-flex">
+            <p>Google offered in: <a href="#" class="text-blue">Kiswahili</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item">
+            <ul class="nav">
+                <li><a href="#">Kenya</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul>
+            <ul class="nav">
+                <li><a href="#">
+                        <img class="icon-small display-inline" src="../images/leaf.png" alt="">
+                        Carbon neutral since 2007
+                    </a></li>
+            </ul>
+            <ul class="nav">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        let inputSvg = document.getElementsByClassName('search-input-svg')[0];
+        let searchInput = document.getElementsByClassName('search-input')[0];
+
+        searchInput.onfocus = () => {
+            inputSvg.style.display = 'none';
+        }
+        searchInput.onblur = () => {
+            // ensure there is no text in the
+            // input element
+            if (!searchInput.value) {
+                inputSvg.style.display = 'initial';
+            }
+        }
+        document.getElementById('search-form').onsubmit = (e) => { e.preventDefault(); console.log('clicked'); }
+    </script>
+</body>
+</html>
